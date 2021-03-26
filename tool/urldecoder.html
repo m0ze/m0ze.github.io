@@ -1,1 +1,58 @@
-<!DOCTYPE html><!--	 __ __ ___ ____ ____ 	|  |  |   |__  |  __|	| | | | / |  __|  __|	|_|_|_|___|____|____|--><html lang="en">	<head>		<meta charset="utf-8">		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">		<meta http-equiv="X-UA-Compatible" content="IE=edge">		<title>m0ze@blackcore:~# URL Decoder/Encoder</title>		<meta name="description" content="URL Decoder/Encoder">		<meta name="keywords" content="URL Decoder, URL Encoder">		<meta name="author" content="m0ze">		<style type="text/css">			<!--			body {background: #000000; color: #e61d4c; padding: 0; margin: 0; font-family: Verdana, sans-serif;}			form {margin: 0; padding: 20px;}			h1 {font-family: Verdana, sans-serif; font-size: 20px; line-height: 1em; border-bottom: 2px #e61d4c solid; padding-bottom: 8px;}			::-moz-selection {color: #000000; background: #e61d4c;}			::selection {color: #000000; background: #e61d4c;}			textarea {background: #000000; color: #e61d4c; font-size: 17px; border: 1px #e61d4c solid; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 420px; resize: none;}			input[type="button"] {margin: 0px 20px 0px 0px; padding: 12px 54px; background: #000000; border: 1px #e61d4c solid; cursor: pointer; color: #e61d4c; font-weight: bold; font-family: Verdana, sans-serif; opacity: 1; transition: 0.4s; text-transform: uppercase;}			input[type="button"]:hover {background: #e61d4c; border: 1px #e61d4c solid; color: #000000;}			.checkboxblock {display: inline-block; vertical-align: middle; font-size: 14px;}			.custom-checkbox {position: absolute; z-index: -1; opacity: 0;}			.custom-checkbox+label {display: inline-flex; align-items: center; user-select: none; text-transform: uppercase;}			.custom-checkbox+label::before {content: ''; display: inline-block; width: 1em; height: 1em; flex-shrink: 0; flex-grow: 0; border: 1px solid #e61d4c; margin-right: 0.5em; background-repeat: no-repeat; background-position: center center; background-size: 50% 50%;}			.custom-checkbox:checked+label::before {border-color: #e61d4c; background-color: #e61d4c; background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");}			.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {border-color: #e61d4c;}			.custom-checkbox:not(:disabled):active+label::before {background-color: #e61d4c; border-color: #e61d4c;}			.custom-checkbox:focus:not(:checked)+label::before {border-color: #e61d4c;}			.custom-checkbox:disabled+label::before {background-color: #e61d4c;}			-->		</style>		<script>			function encode() {var obj = document.getElementById('decoder');var unencoded = obj.value;obj.value = encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");var checkBox = document.getElementById('selectcopy');if (checkBox.checked == true) {document.querySelector('textarea').select();document.execCommand('copy');}}			function decode() {var obj = document.getElementById('decoder');var encoded = obj.value;obj.value = decodeURIComponent(encoded.replace(/\+/g, " "));var checkBox = document.getElementById('selectcopy');if (checkBox.checked == true) {document.querySelector('textarea').select();document.execCommand('copy');}}		</script>	</head>	<body>		<form onsubmit="return false;">			<h1>### ---- [ Tool | URL Decoder/Encoder ]</h1>			<textarea cols="" rows="" id="decoder"></textarea><br /><br />			<div>				<input type="button" onclick="decode()" value="Decode">				<input type="button" onclick="encode()" value="Encode">				<div class="checkboxblock">					<input type="checkbox" class="custom-checkbox" id="selectcopy" name="selectcopy" value="no">					<label for="selectcopy">Copy the Result</label>				</div>			</div>		</form>	</body></html>
+<!DOCTYPE html>
+<!--
+	 __ __ ___ ____ ____ 
+	|  |  |   |__  |  __|
+	| | | | / |  __|  __|
+	|_|_|_|___|____|____|
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>m0ze@blackcore:~# URL Decoder/Encoder</title>
+		<meta name="description" content="URL Decoder/Encoder">
+		<meta name="keywords" content="URL Decoder, URL Encoder">
+		<meta name="author" content="m0ze">
+		<style type="text/css">
+			<!--
+			body {background: #000000; color: #e61d4c; padding: 0; margin: 0; font-family: Verdana, sans-serif;}
+			form {margin: 0; padding: 20px;}
+			h1 {font-family: Verdana, sans-serif; font-size: 20px; line-height: 1em; border-bottom: 2px #e61d4c solid; padding-bottom: 8px;}
+			::-moz-selection {color: #000000; background: #e61d4c;}
+			::selection {color: #000000; background: #e61d4c;}
+			*:focus {outline: none;}
+			textarea {background: #000000; color: #e61d4c; font-size: 17px; border: 1px #e61d4c solid; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 420px; resize: none;}
+			input[type="button"] {margin: 0px 20px 0px 0px; padding: 12px 54px; background: #000000; border: 1px #e61d4c solid; cursor: pointer; color: #e61d4c; font-weight: bold; font-family: Verdana, sans-serif; opacity: 1; transition: 0.4s; text-transform: uppercase;}
+			input[type="button"]:hover {background: #e61d4c; border: 1px #e61d4c solid; color: #000000;}
+			.checkboxblock {display: inline-block; vertical-align: middle; font-size: 14px;}
+			.custom-checkbox {position: absolute; z-index: -1; opacity: 0;}
+			.custom-checkbox+label {display: inline-flex; align-items: center; user-select: none; text-transform: uppercase;}
+			.custom-checkbox+label::before {content: ''; display: inline-block; width: 1em; height: 1em; flex-shrink: 0; flex-grow: 0; border: 1px solid #e61d4c; margin-right: 0.5em; background-repeat: no-repeat; background-position: center center; background-size: 50% 50%;}
+			.custom-checkbox:checked+label::before {border-color: #e61d4c; background-color: #e61d4c; background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");}
+			.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {border-color: #e61d4c;}
+			.custom-checkbox:not(:disabled):active+label::before {background-color: #e61d4c; border-color: #e61d4c;}
+			.custom-checkbox:focus:not(:checked)+label::before {border-color: #e61d4c;}
+			.custom-checkbox:disabled+label::before {background-color: #e61d4c;}
+			-->
+		</style>
+		<script>
+			function encode() {var obj = document.getElementById('decoder');var unencoded = obj.value;obj.value = encodeURIComponent(unencoded).replace(/'/g,"%27").replace(/"/g,"%22");var checkBox = document.getElementById('selectcopy');if (checkBox.checked == true) {document.querySelector('textarea').select();document.execCommand('copy');}}
+			function decode() {var obj = document.getElementById('decoder');var encoded = obj.value;obj.value = decodeURIComponent(encoded.replace(/\+/g, " "));var checkBox = document.getElementById('selectcopy');if (checkBox.checked == true) {document.querySelector('textarea').select();document.execCommand('copy');}}
+		</script>
+	</head>
+	<body>
+		<form onsubmit="return false;">
+			<h1>### ---- [ Tool | URL Decoder/Encoder ]</h1>
+			<textarea cols="" rows="" id="decoder"></textarea><br /><br />
+			<div>
+				<input type="button" onclick="decode()" value="Decode">
+				<input type="button" onclick="encode()" value="Encode">
+				<div class="checkboxblock">
+					<input type="checkbox" class="custom-checkbox" id="selectcopy" name="selectcopy" value="no">
+					<label for="selectcopy">Copy the Result</label>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
