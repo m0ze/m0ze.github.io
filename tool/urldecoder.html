@@ -22,7 +22,7 @@
 			::-moz-selection {color: #000000; background: #e61d4c;}
 			::selection {color: #000000; background: #e61d4c;}
 			*:focus {outline: none;}
-			textarea {background: #000000; color: #e61d4c; font-size: 17px; border: 1px #e61d4c solid; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 420px; resize: none;}
+			textarea {background: #000000; color: #e61d4c; font-size: 17px; border: 1px #e61d4c solid; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; height: 420px; resize: none; padding: 2px 4px 2px 4px;}
 			input[type="button"] {margin: 0px 20px 0px 0px; padding: 12px 54px; background: #000000; border: 1px #e61d4c solid; cursor: pointer; color: #e61d4c; font-weight: bold; font-family: Verdana, sans-serif; opacity: 1; transition: 0.4s; text-transform: uppercase;}
 			input[type="button"]:hover {background: #e61d4c; border: 1px #e61d4c solid; color: #000000;}
 			.checkboxblock {display: inline-block; vertical-align: middle; font-size: 14px;}
@@ -43,11 +43,11 @@
 	</head>
 	<body>
 		<form onsubmit="return false;">
-			<h1>### ---- [ Tool | URL Decoder/Encoder ]</h1>
+			<h1>### -- [ Tool | URL Decoder/Encoder ]</h1>
 			<textarea cols="" rows="" id="decoder"></textarea><br /><br />
 			<div>
-				<input type="button" onclick="decode()" value="Decode">
-				<input type="button" onclick="encode()" value="Encode">
+				<input type="button" onclick="decode();" value="Decode">
+				<input type="button" onclick="encode();" value="Encode">
 				<div class="checkboxblock">
 					<input type="checkbox" class="custom-checkbox" id="selectcopy" name="selectcopy" value="no">
 					<label for="selectcopy">Copy the Result</label>
